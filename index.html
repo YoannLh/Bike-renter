@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Location de vélos</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+			integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+			crossorigin=""/>
+			<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+			integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+			crossorigin=""></script>
+			<link rel="stylesheet" href="velo.css">
+	</head>
+	<body id="body">
+		<header>
+			<div id="diaporama">
+				<div type="checkbox" id="pause"><i class="fas fa-pause"></i></div>
+				<div type="checkbox" id="play" ><i class="fas fa-play"></i></div>
+				<div id="overlay">
+					<div class="textOverlay">Use leftKey, rightKey or mouse to navigate ;)</div>
+				</div>
+				<div class="arrows"><div id="screenArrowLeft"><i class="fas fa-chevron-left"></i></div><div id="screenArrowRight"><i class="fas fa-chevron-right"></i></div></div>
+			</div>
+		</header>
+		<div class="mapForm flex">
+			<div id="mapid"></div>
+			<form id="form" method="" action="">
+				<label id="infos">Détails de la station :</label>
+				<label id="nameStation"></label>
+				<label id="addressStation"></label>
+				<label id="dispoStation"></label>
+				<label id="placeStation"></label>
+				<label id="statusStation"></label>
+				<div id="nameUser">
+					<label for="nom">Nom</label>
+					<input id="nom" type="text" name="nom" pattern="[a-z] | [A-Z]" required/><br>
+					<label for="prénom">Prénom</label>
+					<input id="prenom" type="text" name="prénom" pattern="[a-z] | [A-Z]" required/><br>
+					<button id="button" type="button">Valider ces informations</button>
+					<canvas id="canvas" width="500px" height="390px">Votre signature est nécessaire afin de finaliser votre réservation :</canvas>
+					<div id="check"></div>
+				</div>
+					<div id="buttonsCanvas">
+						<a href="#buttonResa"><div id ="buttonResa">Réserver !</div></a>
+						<a href="#cancel"><div id="cancel">Annuler</div></a>
+					</div>
+			</form>
+		</div>
+		<footer>
+			<div id="reservation"><p id="textResa">Votre réservation a bien été enregistrée !<br>Votre mission (si vous l'acceptez ;) )  est d'aller prendre votre vélo à la station :<div id="station"></div><br> située :<br><br><div id="addressStationResa"></div><br> Il vous reste :</p><div id="superlaser"></div><div id="hope"><br>...avant que votre réservation n'expire.</div><div id="failed">Désolé, votre réservation a était annulée...</div><div id="clearSession">Tout annuler</div></div>
+		</footer>
+		<script type="text/javascript" src="diaporama2.js"></script>
+		<script type="text/javascript" src="formulaire.js"></script>
+		<script type="text/javascript" src="canvas.js"></script>
+		<script type="text/javascript" src="compteur.js"></script>
+		<script type="text/javascript" src="map.js"></script>
+	</body>
+</html>

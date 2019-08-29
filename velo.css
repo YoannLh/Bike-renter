@@ -1,0 +1,248 @@
+#body
+{
+	margin: 0;
+	padding: 0;
+}
+.flex
+{
+	display: flex;
+}
+#diaporama
+{
+	position: relative;
+	top: 10px;
+	display: flex;
+	width: 95%;
+	height: 550px;
+	margin: auto;
+	border: 1px solid black;
+	background: url("img/velo.jpg") no-repeat center;
+	background-size: cover;
+}
+#pause
+{
+	position: absolute;
+	bottom: 1%;
+	left: 53%;
+	font-size: 2em;
+	z-index: 101;
+}
+#play
+{
+	position: absolute;
+	bottom: 1%;
+	left: 47%;
+	font-size: 2em;
+	z-index: 101;
+}
+#overlay
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	text-align: center;
+	background: rgba(0,0,0,0.6);
+	display: none;
+}
+.textOverlay
+{
+	font-size: 2em;
+	color: white;
+	width: 75%;
+	margin: auto;
+}
+.arrows
+{
+	display: none;
+	position: absolute;
+	top: 47%;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	font-size: 2em;
+	color: rgba(0,0,0,0.7);
+	z-index: 111;
+}
+.mapForm 
+{
+	position: relative;
+	width: 95%;
+	margin: auto;
+	margin-top: 10px;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+#mapid
+{
+	width: 45%;
+	height: 400px;
+	margin-top: 50px;
+	border: 1px solid black;
+}
+#form
+{
+	position: relative;
+	width: 45%;
+	height: 400px;
+	margin-top: 50px;
+	border: 1px solid black;
+	text-align: center;
+}
+input
+{
+	display: inline-block;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 10px;
+	border: 1px solid black;
+}
+label
+{
+	display: inline-block;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+#nameUser
+{
+	margin-top: 35px;
+}
+#button
+{
+	width: 45%;
+	height: 20px;
+	margin: auto;
+	margin-top: 10px;
+	background: blue;
+	border: 1px solid white;
+	border-radius: 4px;
+	border-bottom: 2px solid black;
+	color: white;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+}
+#canvas
+{	display: none;
+	position: absolute;
+	top: 1%;
+	left: 3%;
+	border: 1px solid black;
+	background: grey;
+	z-index: 101;
+	color: black;
+}
+#buttonsCanvas
+{
+	display: none;
+}
+#buttonResa
+{
+	display: none;
+	position: absolute;
+	bottom: 3%;
+	left: 25%;
+	width: 80px;
+	height: 20px;
+	margin: auto;
+	background: blue;
+	color: white;
+	border-bottom: 2px solid black;
+	z-index: 1001;
+}
+#cancel
+{
+	display: none;
+	position: absolute;
+	bottom: 3%;
+	left: 60%;
+	width: 80px;
+	height: 20px;
+	margin: auto;
+	background: blue;
+	color: white;
+	border-bottom: 2px solid black;
+	z-index: 1001;
+}
+#reservation
+{
+	display: none;
+	width: 100%;
+	height: auto;
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+}
+.textResa
+{
+	width: 50%;
+	margin: auto;
+	margin-top: 100px;
+}
+#superlaser
+{
+	display: none;
+	width: 20%;
+	margin: auto;
+	height: 50px;
+	margin-top: 25px;
+	background-color: rgba(0, 255, 0, 0.8);
+	font-size: 2em;
+	color: white;
+}
+#failed
+{
+	display: none;
+	font-size: 1em;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+}
+#clearSession 
+{
+	width: 150px;
+	height: 25px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 4px;
+	background: red;
+	color: white;
+}
+#station
+{
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
